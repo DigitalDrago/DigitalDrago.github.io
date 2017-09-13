@@ -28,7 +28,7 @@ h1 {
 <p id="demo">demodiv</p>
     
 <div id = "dd">
-    <input type="button" value="Submit" name = "SB" id = "b1" onclick="btnClick(1,16)">
+    <input type="button" value="Submit" name = "SB" id = "b1" onclick="document.getElementById('demo').innerHTML = btnClick(1,16)">
     <button onclick="document.getElementById('demo').innerHTML = btnClick(17,22)">Click Me</button>
   <br/>
 </div>
