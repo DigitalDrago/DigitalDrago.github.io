@@ -15,7 +15,7 @@ h1 {
   	position: absolute;
 	margin-left: 4%;
 	margin-top: 7%;
-  height:10%;    
+  height:25%;    
 }
     
 </style>
@@ -66,17 +66,18 @@ h1 {
     
 
 function btnClick(min,max){
-  var vnb = Math.floor(Math.random() * 16);
+  var vnumb = Math.floor(Math.random() * 16);
   return Math.floor(Math.random() * (max - min)) + min;
-  if(vnb=1){
+  document.getElementById("picPhosphor").style.display = "block"; 
+  if(vnumb=1){
     document.getElementById("test").innerHTML = "<br/>" + "test text 1";
     document.getElementById("picPink").style.display = "block";
     document.getElementById("picTabby").style.display = "none";
   }
-  else if(vnb=2){
+  else if(vnumb=2){
     document.getElementById("test").innerHTML = "<br/>" + "test text 2";
   }
-  else if(vnb=3){
+  else if(vnumb=3){
     document.getElementById("test").innerHTML = "<br/>" + "test text 3";
   }
   else{
