@@ -5,10 +5,10 @@
 </head>
 <style>
 h1 {
-    color: #004d41;
+    color: #60010d;
     text-align: center;
     font-family: verdana;
-    background-color: #00ffd9;
+    background-color: #e0476b;
 }
 </style>
 <body>
@@ -46,6 +46,8 @@ function btnClick(){
   var nb = Math.floor(Math.random() * 16);
   if(nb=1){
     document.getElementById("test").innerHTML = "<br/>" + "test text 1";
+    document.getElementById("picPink").style.display = "block";
+    document.getElementById("picTarr").style.display = "none";
   }
   else if(nb=2){
     document.getElementById("test").innerHTML = "<br/>" + "test text 2";
