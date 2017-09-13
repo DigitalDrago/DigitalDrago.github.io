@@ -17,7 +17,7 @@ h1 {
 
 <p>This will give you a random slime from Slime Rancher. It will be one of the 15 normal slimes.</p>
 
-<p id="demo"></p>
+<p id="demo">demodiv</p>
     
 <div id = "dd">
     <input type="button" value="Submit" name = "SB" id = "b1" onclick="btnClick()">
@@ -26,9 +26,11 @@ h1 {
 </div>
 
 <div id = "test">
+    <p>testdiv</p>
 </div>
     
 <div id = "dpic">
+    <p>picdiv</p>
   <img src="P_Pink.png" alt="Pink_Slime" style="display: none" id="picPink">
   <img src="P_Tabby.png" alt="Tabby_Slime" style="display: block" id="picTabby">
   <img src="P_Phosphor.png" alt="Phosphor_Slime" style="display: none" id="picPhosphor">
@@ -58,17 +60,17 @@ Math.floor(Math.random() * 16);
     
 
 function btnClick(min,max){
-  var nb = Math.floor(Math.random() * (max - min)) + min;
+  var vnb = Math.floor(Math.random() * (max - min)) + min;
   return Math.floor(Math.random() * (max - min)) + min;
-  if(nb=1){
+  if(vnb=1){
     document.getElementById("test").innerHTML = "<br/>" + "test text 1";
     document.getElementById("picPink").style.display = "block";
     document.getElementById("picTabby").style.display = "none";
   }
-  else if(nb=2){
+  else if(vnb=2){
     document.getElementById("test").innerHTML = "<br/>" + "test text 2";
   }
-  else if(nb=3){
+  else if(vnb=3){
     document.getElementById("test").innerHTML = "<br/>" + "test text 3";
   }
   else{
