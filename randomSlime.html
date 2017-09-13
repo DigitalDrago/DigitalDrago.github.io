@@ -60,12 +60,10 @@ h1 {
 </div>
 
 <script type = "text/javascript">
-document.getElementById("demo").innerHTML =
-Math.floor(Math.random() * 16);
     
 
 function btnClick(min,max){
-  var vnb = Math.floor(Math.random() * (max - min)) + min;
+  var vnb = Math.floor(Math.random() * 16);
   return Math.floor(Math.random() * (max - min)) + min;
   if(vnb=1){
     document.getElementById("test").innerHTML = "<br/>" + "test text 1";
