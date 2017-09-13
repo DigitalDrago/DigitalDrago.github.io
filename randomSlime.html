@@ -24,6 +24,9 @@ h1 {
   <br/>
 </div>
 
+<div id = "test">
+</div>
+    
 <div id = "dpic">
   <img src="P_Pink.png" alt="Pink_Slime" style="display: none" id="picPink">
   <img src="P_Tabby.png" alt="Tabby_Slime" style="display: none" id="picTabby">
@@ -42,7 +45,7 @@ Math.floor(Math.random() * 16);
 function btnClick(){
   var nb = Math.floor(Math.random() * 16);
   if(nb=1){
-    document.getElementById("demo").innerHTML = "<br/>" + "You are a Pink Slime, ";
+    document.getElementById("test").innerHTML = "<br/>" + "You are a Pink Slime, ";
   }
   else if(nb=2){
   }
