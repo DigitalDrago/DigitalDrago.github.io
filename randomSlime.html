@@ -30,6 +30,7 @@ h1 {
 <div id = "dd">
     <input type="button" value="1 - 15" name = "SB" id = "b1" onclick="document.getElementById('demo').innerHTML = btnClick(1,16)">
     <button onclick="document.getElementById('demo').innerHTML = btnClick(16,21)">16 - 20</button>
+    <button onclick="otherFunction()">another button</button>
   <br/>
 </div>
 
@@ -68,11 +69,12 @@ h1 {
 function btnClick(min,max){
   var vnumb = Math.floor(Math.random() * 16);
   return Math.floor(Math.random() * (max - min)) + min;
-  document.getElementById("picPhosphor").style.display = "block"; 
+  document.getElementById("picRock").style.display = "block"; 
   if(vnumb=1){
     document.getElementById("test").innerHTML = "<br/>" + "test text 1";
     document.getElementById("picPink").style.display = "block";
-    document.getElementById("picTabby").style.display = "none";
+    document.getElementById("picTabby").style.display = "none"; 
+    document.getElementById("picPhosphor").style.display = "none";
   }
   else if(vnumb=2){
     document.getElementById("test").innerHTML = "<br/>" + "test text 2";
@@ -84,7 +86,13 @@ function btnClick(min,max){
     document.getElementById("test").innerHTML = "<br/>" + "test text else";
   }
 }
+
+function otherFunction(){
+  document.getElementById("picPhosphor").style.display = "block"; 
+  document.getElementById("picTabby").style.display = "none";
+}
     
+	
 </script>
 
 </body>
