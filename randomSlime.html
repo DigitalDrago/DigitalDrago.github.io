@@ -18,13 +18,28 @@ h1 {
 <p>Gives you a random base slime from Slime Rancher.</p>
 
 <p id="demo"></p>
+    
+<div id = "dd">
+    <input type="button" value="Submit" name = "SB" id = "b1" onclick="btnClick()">
+  <br/>
+</div>
 
-<script>
+<div id = "dpic">
+  <img src="P_Pink.png" alt="Pink_Slime" style="display: none" id="picPink">
+  <img src="P_Tabby.png" alt="Tabby_Slime" style="display: none" id="picTabby">
+  <img src="P_Phosphor.png" alt="Phosphor_Slime" style="display: none" id="picPhosphor">
+  <img src="P_Rock.png" alt="Rock_Slime" style="display: none" id="picRock">
+  <img src="P_Puddle.png" alt="Puddle_Slime" style="display: none" id="picPuddle">
+  <img src="P_Tarr.png" alt="Tarr" style="display: none" id="picTarr">
+
+</div>
+
+<script type = "text/javascript">
 document.getElementById("demo").innerHTML =
 Math.floor(Math.random() * 16);
     
 
-function btnPress(){
+function btnClick(){
   var nb = Math.floor(Math.random() * 16);
   if(nb=1){
     document.getElementById("demo").innerHTML = "<br/>" + "You are a Pink Slime, ";
