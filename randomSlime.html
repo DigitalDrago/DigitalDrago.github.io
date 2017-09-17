@@ -78,7 +78,7 @@ body {
     
 
 function btnClick(min,max){
-  var vnumb = Math.floor(Math.random(max - min)) + min;
+  var vnumb = Math.random()*16 + 1;
   document.getElementById("picDervish").style.display = "block"; 
   if(vnumb=1){
     document.getElementById("test").innerHTML = "<br/>" + "test text 1";
