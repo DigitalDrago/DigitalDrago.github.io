@@ -80,16 +80,16 @@ body {
 function btnClick(min,max){
   var vnumb = Math.random()*16 + 1;
   document.getElementById("picDervish").style.display = "block"; 
-  if(vnumb=1){
+  if(vnumb==1){
     document.getElementById("test").innerHTML = "<br/>" + "test text 1";
     document.getElementById("picPink").style.display = "block";
     document.getElementById("picTabby").style.display = "none"; 
     document.getElementById("picPhosphor").style.display = "none";
   }
-  else if(vnumb=2){
+  else if(vnumb==2){
     document.getElementById("test").innerHTML = "<br/>" + "test text 2";
   }
-  else if(vnumb=3){
+  else if(vnumb==3){
     document.getElementById("test").innerHTML = "<br/>" + "test text 3";
   }
   else{
@@ -100,20 +100,20 @@ function btnClick(min,max){
 function btnClick2(min,max){
   var vnumb = Math.floor(Math.random(max - min)) + min;
   document.getElementById("picMosaic").style.display = "block"; 
-  if(vnumb=1){
-    document.getElementById("test").innerHTML = "<br/>" + "test text 1";
+  if(vnumb==1){
+    document.getElementById("test").innerHTML = "<br/>" + "2test text 1";
     document.getElementById("picHunter").style.display = "block";
     document.getElementById("picTabby").style.display = "none"; 
     document.getElementById("picPhosphor").style.display = "none";
   }
-  else if(vnumb=2){
-    document.getElementById("test").innerHTML = "<br/>" + "test text 2";
+  else if(vnumb==2){
+    document.getElementById("test").innerHTML = "<br/>" + "2test text 2";
   }
-  else if(vnumb=3){
-    document.getElementById("test").innerHTML = "<br/>" + "test text 3";
+  else if(vnumb==3){
+    document.getElementById("test").innerHTML = "<br/>" + "2test text 3";
   }
   else{
-    document.getElementById("test").innerHTML = "<br/>" + "test text else";
+    document.getElementById("test").innerHTML = "<br/>" + "2test text else";
   }
   return Math.floor(Math.random() * (max - min)) + min;
 }
